@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h2>Unit converter made by Shital</h2>
+    <meta charset="utf-8" />
+    <title>Unit converter</title>
+    <link rel="icon" href="https://tse4.mm.bing.net/th?id=OIP.vdvhE8TZT08dl-NY0tbrTwHaEK&pid=Api&P=0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@100;200;300;500;600;700&family=Poppins:wght@100;200;500;600;700&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form id="unitCalc" onsubmit="convertUnit(); return false">
+      <label for="unit"><b>Enter the length</b><br /><b>to be converted</b></label>
+      <br /><input type="number" name="unit" id="unit" />
+      <select name="unit_diff" id="unit_diff">
+        <option value="kil">kilometer(km)</option>
+        <option value="me">meter(m)</option>
+        <option value="cen">centimeter(cm)</option>
+        <option value="mil">millimeter(mm)</option>
+      </select>
+      <br />
+      <input
+        class="button-17"
+        type="submit"
+        name="unit"
+        value="Convert"
+      /><br />
+      <span id="resultContainer"></span> <br />
+      <span id="resultContainer2"></span> <br />
+      <span id="resultContainer3"></span>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
